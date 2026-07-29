@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Synthetic public-safe Brain OS interface demonstration.">
+  <title>brain — Living Constellation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail" aria-label="Brain OS">
+      <a class="brand" href="#today" aria-label="Brain home"><span class="mark">B</span><span>brain</span></a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-item is-active" data-view="today" aria-current="page">Today</button>
+        <button class="nav-item" data-view="graph">Graph</button>
+        <button class="nav-item" data-view="workspace">Workspace</button>
+        <button class="nav-item" data-view="consult">Consult</button>
+        <button class="nav-item" data-view="review">Review</button>
+      </nav>
+      <p class="privacy"><span></span> synthetic · local · safe</p>
+    </aside>
+
+    <main id="today" class="view">
+      <header><div><p class="eyebrow">PERSONAL OPERATING ENVIRONMENT</p><h1>Today</h1></div><span class="pill">Synthetic demo</span></header>
+      <section class="hero"><div><p class="eyebrow">CURRENT FOCUS</p><h2>Turn connected ideas into meaningful action.</h2><p>Brain combines orientation, knowledge, context, and consultation without making the assistant the whole experience.</p></div><button class="primary" data-open-graph>Explore constellation</button></section>
+      <section class="cards" aria-label="Daily status">
+        <article><strong>1</strong><span>Decision waiting</span></article><article><strong>3</strong><span>Active contexts</span></article><article><strong>7</strong><span>Verified concepts</span></article>
+      </section>
+      <section class="two-column"><article class="panel"><p class="eyebrow">NEEDS YOU</p><h2>Attention</h2><p>Choose the next product-learning experiment.</p></article><article class="panel"><p class="eyebrow">RECENTLY VERIFIED</p><h2>Momentum</h2><p>The Living Constellation interaction model passed its bounded review.</p></article></section>
+    </main>
+
+    <main id="graph" class="view" hidden>
+      <header><div><p class="eyebrow">KNOWLEDGE ENVIRONMENT</p><h1>Living Constellation</h1></div><span class="pill safe">Fictional data only</span></header>
+      <section class="graph-tools"><label>Search nodes<input type="search" data-search placeholder="Try ‘privacy’"></label><p data-count>0 nodes</p></section>
+      <div class="graph-layout">
+        <section class="graph-stage" data-stage aria-label="Interactive synthetic knowledge graph"><div class="edges" data-edges aria-hidden="true"></div><div data-nodes></div></section>
+        <aside class="inspector"><p class="eyebrow">SELECTED CONTEXT</p><h2 data-title>Select a node</h2><p data-summary>Choose a concept to inspect its fictional context.</p><dl><div><dt>Type</dt><dd data-type>—</dd></div><div><dt>Links</dt><dd data-links>—</dd></div></dl><button class="primary" data-open-workspace disabled>Open workspace</button></aside>
+      </div>
+      <details><summary>Accessible node list</summary><ul class="node-list" data-list></ul></details>
+    </main>
+
+    <main id="workspace" class="view" hidden>
+      <header><div><p class="eyebrow">BOUNDED CONTEXT</p><h1>Workspace</h1></div><span class="pill">No file access</span></header>
+      <section class="panel workspace-card"><p class="eyebrow">ACTIVE SYNTHETIC CONTEXT</p><h2 data-workspace-title>No context selected</h2><p data-workspace-summary>Select a graph node and open its workspace.</p><p class="eyebrow related-label">RELATED CONCEPTS</p><ul class="node-list" data-related><li>No selected context.</li></ul><button class="primary" data-prepare disabled>Prepare consultation</button></section>
+    </main>
+
+    <main id="consult" class="view" hidden>
+      <header><div><p class="eyebrow">CONTROLLED CONSULTATION</p><h1>Consult</h1></div><span class="pill safe">No AI connection</span></header>
+      <section class="panel"><h2>Prepare an idea without sending it.</h2><p>This public demonstration never contacts an AI service. It only shows how approved context could become an editable draft.</p><label class="draft-label">Consultation draft<textarea rows="8" data-draft placeholder="Select a graph node, then prepare a consultation from its workspace."></textarea></label><button class="primary" data-demo-submit>Demonstrate review</button><p class="status" data-status>Nothing is transmitted or saved.</p></section>
+    </main>
+
+    <main id="review" class="view" hidden>
+      <header><div><p class="eyebrow">PRODUCT EVIDENCE</p><h1>Review</h1></div><span class="pill">Prototype</span></header>
+      <section class="review-grid"><article><b>PASS</b><h2>Privacy boundary</h2><p>Fictional data, no network calls, no storage, and no local-file access.</p></article><article><b>PASS</b><h2>Interaction</h2><p>Navigation, search, selection, context movement, and keyboard controls.</p></article><article><b>PASS</b><h2>Accessible fallback</h2><p>Semantic landmarks, visible focus, responsive layout, and a readable node list.</p></article><article><b class="pending">LIMITED</b><h2>Product readiness</h2><p>A portfolio demonstration—not authentication, hosting, or production security.</p></article></section>
+    </main>
+  </div>
+</body>
+</html>
