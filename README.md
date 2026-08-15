@@ -1,45 +1,81 @@
-# Brain OS Showcase
+# brain
 
-A synthetic, public-safe demonstration of a personal decision and action operating environment.
+**A governed personal AI operating system for turning knowledge, decisions, and ideas into accountable action.**
 
-Brain OS explores what an AI-assisted personal operating system can feel like when knowledge, active work, decisions, and consultation share one coherent interface. The assistant is one tool inside the environment—not the entire product.
+Brain began as a personal knowledge system and developed into an operating environment where maintained context, specialized perspectives, active projects, decisions, and review processes work together. The conversational assistant is one component inside that environment—not the entire product.
 
-## What this demonstration shows
+This repository is a public-safe, interactive representation of the private system. All displayed information is fictional.
 
-- A daily orientation surface for focus, attention, and momentum
-- A Living Constellation knowledge graph
-- Searchable and selectable synthetic knowledge nodes
-- A bounded context workspace
-- A consultation-preparation flow that does not contact an AI service
-- Responsive, keyboard-friendly interaction
-- Visible privacy and product-readiness boundaries
+## Explore the interface
 
-## Try it locally
+Open [`index.html`](index.html) in a modern browser. The demonstration requires no installation, account, API key, or build process.
 
-Open `index.html` in a modern browser. No installation, account, API key, or build process is required.
+The interface includes:
+
+- a daily orientation surface for current focus and attention;
+- a searchable Living Constellation knowledge graph;
+- bounded context workspaces;
+- consultation preparation;
+- visible review and product-readiness states;
+- responsive and keyboard-accessible interaction.
+
+## What the complete Brain does
+
+The private Brain combines several governed capabilities:
+
+- **Maintained knowledge:** interconnected source summaries, concepts, plans, and project history.
+- **Decision support:** evidence, assumptions, uncertainty, alternatives, and decisions remain distinguishable.
+- **Specialized perspectives:** defined personas contribute focused expertise without becoming separate sources of truth.
+- **Project execution:** approved decisions can become bounded implementation work, verification, and acceptance records.
+- **Continuity:** durable context allows work to resume without reconstructing the project from memory.
+- **Diagnostics:** structural, information-quality, freshness, contradiction, and resource checks can be performed without silently rewriting the system.
+- **Privacy boundaries:** personal records and operational internals remain separated from public demonstrations.
+
+## Why it is different from a chatbot
+
+A chatbot primarily answers the message in front of it. Brain is designed around continuity and governance:
+
+1. retrieve the relevant maintained context;
+2. identify the type of decision or task;
+3. apply the appropriate specialist perspectives and constraints;
+4. produce an answer, decision, or bounded action;
+5. verify the result;
+6. preserve useful outcomes for future work.
+
+The system is intended to become more useful through responsible use while keeping evidence, interpretation, authority, and execution visibly separated.
+
+## Public architecture
+
+The high-level operating model is documented in [`ARCHITECTURE.md`](ARCHITECTURE.md). Detailed prompts, governance contracts, private knowledge, personal records, and implementation history are intentionally excluded.
+
+## Engineering approach
+
+Brain has been developed through incremental contracts, explicit scope boundaries, testable acceptance criteria, owner walkthroughs, defect records, architectural reviews, and reusable system components. The broader workspace has supported several applied projects, including an appointment-business operating-system prototype and an independently developed Godot game.
+
+This repository demonstrates the product concept and interface direction. It does not claim that the static demonstration contains the complete private runtime.
 
 ## Demonstration boundary
 
-This repository contains fictional data only. It does not contain or connect to the private Brain system, personal records, private knowledge, internal prompts, governance methods, credentials, server endpoints, or proprietary implementation history.
+This public repository:
 
-The demonstration:
-
+- contains fictional data only;
 - makes no network requests;
 - stores nothing in the browser;
 - does not call an AI model;
 - cannot open local files;
-- cannot write or execute actions.
+- cannot write or execute actions;
+- contains no credentials, personal records, private prompts, or employer materials.
 
-## Engineering approach
+Authentication, hosted storage, multi-user isolation, production monitoring, and deployment security are outside this static demonstration.
 
-The showcase demonstrates incremental product delivery, privacy-by-design boundaries, accessible fallbacks, deterministic behavior, and testable interaction contracts. It is a portfolio case study and interface prototype—not a production service.
+## Project status
 
-## Status
+- **Private system:** Brain v1.0, under continued development.
+- **Public artifact:** synthetic interactive product and interface showcase.
+- **Current direction:** evolve the interface toward a secure daily operating environment while preserving governed context and bounded execution.
 
-**Synthetic local demonstration.** The broader private system remains under active development. Authentication, hosting, multi-user isolation, production monitoring, and deployment security are intentionally outside this repository.
+## Author
 
-## Assessment-learning integrity
-
-Employment assessments and employer-provided materials are not reproduced here. Any future programming exercises will use original prompts and fixtures and will identify AI assistance accurately.
+Created by **Joseph Hart** under **quasinfinite**.
 
 © 2026 Quasinfinite. All rights reserved for original showcase materials.
